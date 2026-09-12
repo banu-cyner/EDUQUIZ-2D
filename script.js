@@ -4,7 +4,7 @@
 
 // Ganti URL ini dengan URL Web App Google Apps Script
 const GOOGLE_SCRIPT_URL =
-    "GANTI_DENGAN_URL_WEB_APP_GOOGLE_SCRIPT";
+    "https://script.google.com/macros/s/AKfycbzGxyOtHE8Wf1Yjwzm_z5sCgId0WqK3zYghf4EaSXlWEeIvfFa5UMP9iXflsUuNH3ZL/exec";
 
 
 /* =========================================
