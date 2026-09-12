@@ -127,13 +127,13 @@ const questions = [
 
     {
         question:
-            "Warna yang dihasilkan dari campuran merah dan kuning adalah...",
+            "siapa player ff terjago...",
 
         answers: [
-            "Hijau",
-            "Ungu",
-            "Oranye",
-            "Biru"
+            "evos rasyah",
+            "RRQ abay",
+            "annas",
+            "BTR c1benk"
         ],
 
         correct: 2
