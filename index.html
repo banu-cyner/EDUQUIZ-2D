@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EduQuiz 2D - Game Edukasi</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ============================= -->
+    <!-- HALAMAN AWAL -->
+    <!-- ============================= -->
+
+    <section id="startScreen" class="screen active">
+
+        <div class="game-card">
+
+            <div class="logo">
+                🎮
+            </div>
+
+            <h1>EDUQUIZ 2D</h1>
+
+            <p class="subtitle">
+                Petualangan Kuis Edukasi
+            </p>
+
+            <div class="character">
+                🧑‍🚀
+            </div>
+
+            <p>
+                Jawab pertanyaan dengan benar dan kumpulkan
+                poin sebanyak-banyaknya!
+            </p>
+
+            <input
+                type="text"
+                id="playerName"
+                placeholder="Masukkan nama kamu"
+                maxlength="30"
+            >
+
+            <button id="startButton" class="main-button">
+                🚀 MULAI PERMAINAN
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ============================= -->
+    <!-- HALAMAN GAME -->
+    <!-- ============================= -->
+
+    <section id="gameScreen" class="screen">
+
+        <div class="game-container">
+
+            <!-- HEADER -->
+
+            <header class="game-header">
+
+                <div class="player-info">
+                    👤
+                    <span id="displayName">Player</span>
+                </div>
+
+                <div class="score-box">
+                    ⭐ Skor:
+                    <span id="score">0</span>
+                </div>
+
+                <div class="question-counter">
+                    Soal
+                    <span id="questionNumber">1</span>
+                    /
+                    <span id="totalQuestions">10</span>
+                </div>
+
+            </header>
+
+
+            <!-- AREA 2D -->
+
+            <div class="world">
+
+                <div class="cloud cloud-1">☁️</div>
+                <div class="cloud cloud-2">☁️</div>
+
+                <div class="sun">
+                    ☀️
+                </div>
+
+                <div class="mountain mountain-1"></div>
+                <div class="mountain mountain-2"></div>
+
+                <div class="ground"></div>
+
+                <div class="player-character">
+                    🧑‍🚀
+                </div>
+
+            </div>
+
+
+            <!-- SOAL -->
+
+            <div class="quiz-card">
+
+                <div class="question-icon">
+                    ❓
+                </div>
+
+                <h2 id="question">
+                    Pertanyaan akan muncul di sini
+                </h2>
+
+                <div id="answers" class="answers">
+
+                    <!-- Jawaban dibuat oleh JavaScript -->
+
+                </div>
+
+                <div class="feedback" id="feedback"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ============================= -->
+    <!-- HASIL -->
+    <!-- ============================= -->
+
+    <section id="resultScreen" class="screen">
+
+        <div class="result-card">
+
+            <div class="trophy">
+                🏆
+            </div>
+
+            <h1>Permainan Selesai!</h1>
+
+            <p>
+                Hebat, <strong id="resultName"></strong>!
+            </p>
+
+            <div class="final-score">
+
+                <span>SKOR AKHIR</span>
+
+                <strong id="finalScore">
+                    0
+                </strong>
+
+            </div>
+
+            <div class="result-detail">
+
+                <div>
+                    <span>✅ Benar</span>
+                    <strong id="correctAnswer">0</strong>
+                </div>
+
+                <div>
+                    <span>❌ Salah</span>
+                    <strong id="wrongAnswer">0</strong>
+                </div>
+
+                <div>
+                    <span>📊 Persentase</span>
+                    <strong id="percentage">0%</strong>
+                </div>
+
+            </div>
+
+            <p id="saveStatus" class="save-status">
+                Menyimpan hasil...
+            </p>
+
+            <button
+                id="restartButton"
+                class="main-button"
+            >
+                🔄 MAIN LAGI
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
