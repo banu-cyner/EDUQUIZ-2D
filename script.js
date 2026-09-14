@@ -57,13 +57,13 @@ const questions = [
 
     {
         question:
-            "Sumber energi utama bagi kehidupan di bumi adalah...",
+            "Organ Manusia Terbesar adalah....",
 
         answers: [
-            "Bulan",
-            "Matahari",
-            "Angin",
-            "Air"
+            "Jantung",
+            "Kulit",
+            "Ginjal",
+            "Usus"
         ],
 
         correct: 1
